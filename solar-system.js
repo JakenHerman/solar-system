@@ -10,7 +10,7 @@
 //Neptune
 //Pluto (which still exists...)
 
-//speeds
+//s stands for speed of planet 
 
 var sMercury = 365.26 / 87.96;
 var sVenus = 365.26 / 224.68;
