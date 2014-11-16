@@ -1,60 +1,40 @@
-//code written by Jaken Herman
 
-//Mercury
-//Venus
-//Earth
-//Mars
-//Jupiter
-//Saturn
-//Uranus
-//Neptune
-//Pluto (which still exists...)
-
-//s stands for speed of planet 
-
-var sMercury = 365.26 / 87.96;
-var sVenus = 365.26 / 224.68;
-var sEarth = 1;
-var sMars = 1 / 686.98;
-var sJupiter = 1 / 11.862;
-var sSaturn = 1 / 29.456;
-var sUranus = 1 / 84.04;
-var sNeptune = 1 / 164.81;
-var sPluto = 1 / 247.7;
-
+//s denotes speed
+var sMercury =365.26/87.96;
+var sVenus =365.26/224.68;
+var sEarth =1;
+var sMars =1/686.98;
+var sJupiter =1/11.862;
+var sSaturn =1/29.456;
+var sUranus =1/84.04;
+var sNeptune =1/164.81;
+var sPluto =1/247.7;
 //sizes
-
-var zMercury = 5;
-var zVenus = 10;
-var zEarth = 10;
-var zMars = 7;
-var zJupiter = 20;
-var zSaturn = 15;
-var zUranus = 10;
-var zNeptune = 10;
-var zPluto = 5;
-
+var zMercury =5;
+var zVenus =10;
+var zEarth =10;
+var zMars =7;
+var zJupiter =20;
+var zSaturn =15;
+var zUranus =10;
+var zNeptune =10;
+var zPluto =5;
 //Orbits
-
-var mOrbit = 1;
-var vOrbit = 2;
-var eOrbit = 3;
-var marsOrbit = 4;
-var jOrbit = 5;
-var sOrbit = 6;
-var uOrbit = 7;
-var nOrbit = 8;
-var pOrbit = 9;
-
+var mOrbit =1;
+var vOrbit =2;
+var eOrbit =3;
+var marsOrbit =4;
+var jOrbit =5;
+var sOrbit =6;
+var uOrbit =7;
+var nOrbit =8;
+var pOrbit =9;
 //Orbit Shapes
-
-var bSize = 50;
-var incX = 30;
-var incY = 20;
-
+var bSize =50;
+var incX =30;
+var incY =20;
 var drawPlanet = function(time, speed, orbit, size) {
-    var degree = (time * speed) % 360;
-    
+    var degree =(time*speed)%360;
     var radX = (bSize + incX * pow(orbit, 1.1)) / 2;
     var radY = (bSize + incY * pow(orbit,1.1)) / 2;
     var positionX = radX * cos(degree);
